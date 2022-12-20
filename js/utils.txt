@@ -1,0 +1,52 @@
+variaveis
+
+
+var  ("usa o var antes de declarar a variavel (é solta)")
+
+var a = 3
+var b = 4
+area = a * b
+console.log(area)
+var area;
+=================================================================
+let > ("usa o let depois de declarar a variavel (é restrita)")
+
+let a = 3
+let b = 4
+area = a * b
+console.log(area)
+let area;
+
+=============================================================================================
+
+const > ("usa o const depois de declarar a variavel (é restrita e não pode ser alterada)")
+============================================================================================
+
+DOCUMENTACAO NODE JS
+https://nodejs.org/api/console.html/////
+
+===================================================
+
+OPERADORES
+    == (compara o valor)
+    === (compara o valor e o tipo de dado)
+////////////////////////////////
+TERNARIO (para comparacoes mais curtas)
+    (condicao) ? 'valor1' : 'valor2'
+                    true      false
+=====================================================
+
+TYPEOF (tipo de dado da variavel)
+====================================================
+
+TEMPLATE STRING (usar crase ao inves de aspas simples ou duplas)
+    `texto ${variavel} texto`
+==============================================================
+EXPRESSAO DE FUNCAO
+const soma = function(num1, num2){return num1 + num2}
+    console.log(soma(12 + 15))
+
+====================================================
+ARROW Function (funcao de seta)
+    const soma = (num1, num2) => num1 + num2;
+    const apresentar = nome => `Meu nome é ${nome}`
