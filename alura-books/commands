@@ -1,0 +1,6 @@
+=== START PROJECT ====
+
+npx create-react-app .
+
+=== RUN ====
+npm start
