@@ -1,4 +1,3 @@
-
 import Logo from '../logo'
 import OpcoesHeader from '../OptionsHeader'
 import IconesHeader from '../IconesHeader'
