@@ -9,7 +9,7 @@ const Input = styled.input`
     border-radius: 50px;
     width: 200%;
     color: #FFF;
-    font-size: 6px;
+    font-size: 16px;
     margin-bottom: 10px;
 
     &::placeholder{
