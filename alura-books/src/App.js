@@ -2,6 +2,8 @@
 import Header from './components/Header';
 import styled from 'styled-components';
 import Search from './components/Search';
+import LastLaunch from './components/LastLaunch';
+
 
 const AppContainer = styled.div`
    
@@ -14,6 +16,7 @@ function App() {
     <AppContainer >
       <Header />
       <Search />
+      <LastLaunch />
     </AppContainer >
   );
 }

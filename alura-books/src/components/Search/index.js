@@ -42,8 +42,6 @@ const Result = styled.div`
         border: 1px solid white;
     }
 `
-
-
 function Search() {
     const [booksSearch, setBooksSearch] = useState([])
 
