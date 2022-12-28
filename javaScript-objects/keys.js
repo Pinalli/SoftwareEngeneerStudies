@@ -16,9 +16,11 @@ client.addresses = [
     },
 ];
 
-for (let key in client) {    
-    let type = typeof client[key];
-    if (type != 'object' && type != 'function') { //if is not object or function
-        console.log(`The key ${key} has the value ${client[key]}`);
-    }
+// return array with keys
+const keysObject = Object.keys(client);
+console.log(keysObject);
+if (!keysObject.includes('name')) {
+    console.error('The object does not have the name key');
+} else {
+    console.log('The object has the name key');
 }
