@@ -1,0 +1,11 @@
+{
+  "nome": "João da Silva",
+  "email": "joao@email.com",
+  "telefone": ["513223344", "51922334453"],
+  "endereco": {
+    "rua": "Rua dos Bobos",
+    "numero": 0,
+    "apartamento": true,
+    "complemento": "ap. 123"
+  }
+}
