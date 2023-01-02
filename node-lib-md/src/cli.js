@@ -5,12 +5,12 @@ import validateList from './http-validacao.js'
 
 const path = process.argv;
 
-function printList(validate, result, identifier = '') {
+async function printList(validate, result, identifier = '') {
     if (validate) {
         console.log(
             chalk.yellow('Validate list'),
             chalk.black.bgGreen(identifier),
-            validateList(result));
+            await validateList(result));
     } else {
         console.log(
             chalk.yellow('Linked list'),

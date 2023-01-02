@@ -2,3 +2,5 @@
  
 package json
   npm run cli ./files/
+    npm run cli:validate
+    
