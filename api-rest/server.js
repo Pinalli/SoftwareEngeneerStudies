@@ -7,8 +7,9 @@ const server = http.createServer((req, res) => {
 
 const routs = {
     '/': "Node course",
-    '/book': 'Node.js book',
-    '/author': 'Authors list'
+    '/books': 'Node.js book',
+    '/author': 'Authors list',
+    '/about': 'Info about the course'
 }
 
 server.listen(port, () => {
