@@ -1,0 +1,18 @@
+
+Método	Descrição
+GET	Obter os dados de um recurso.
+POST	Criar um novo recurso.
+PUT	Substituir os dados de um determinado recurso.
+PATCH	Atualizar parcialmente um determinado recurso.
+DELETE	Excluir um determinado recurso.
+HEAD	Similar ao GET, mas utilizado apenas para se obter os cabeçalhos de resposta, sem os dados em si.
+OPTIONS	Obter quais manipulações podem ser realizadas em um determinado recurso.
+
+
+
+Método	URI	Utilização
+GET	/clientes	Recuperar os dados de todos os clientes.
+GET	/clientes/id	Recuperar os dados de um determinado cliente.
+POST	/clientes	Criar um novo cliente.
+PUT	/clientes/id	Atualizar os dados de um determinado cliente.
+DELETE	/clientes/id	Excluir um determinado cliente.
