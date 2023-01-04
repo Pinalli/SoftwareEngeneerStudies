@@ -2,7 +2,7 @@ import authors from '../models/Author.js'
 
 class AuthorController {
 
-    static getAuthores(req, res) {
+    static getAuthors(req, res) {
         authors.find((err, authors) => {
             res.status(200).json(authors);
         })
@@ -38,9 +38,9 @@ class AuthorController {
     static toUpdateAuthors = (req, res) => {
         const id = req.params.id;
 
-        authors.findByIdAndUpdate(id, { set: req.body }, (err) => {
+        authors.findByIdAndUpdate(id, { $set: req.body }, (err) => {
             if (!err) {
-                res.status(200).send({ message: 'authors updated successfully' })
+                res.status(200).send({ message: 'Author updated successfully' })
             } else {
                 res.status(500).send({ message: err.message })
             }
@@ -52,7 +52,7 @@ class AuthorController {
 
         authors.findByIdAndDelete(id, (err) => {
             if (!err) {
-                res.status(200).send({ message: 'authors deleted successfully' })
+                res.status(200).send({ message: 'Author removed successfully' })
 
             } else {
                 res.status(500).send({ message: err.message })

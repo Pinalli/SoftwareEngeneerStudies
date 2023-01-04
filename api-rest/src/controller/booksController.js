@@ -52,7 +52,7 @@ class BookControler {
 
     static toUpdateBook = (req, res) => {
         const id = req.params.id;
-        books.findByIdAndUpdate(id, { set: req.body }, (err) => {
+        books.findByIdAndUpdate(id, {$set: req.body }, (err) => {
             if (!err) {
                 res.status(200).send({ message: 'Book updated successfully' })
 
