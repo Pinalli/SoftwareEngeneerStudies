@@ -52,7 +52,7 @@ class BookControler {
 
     static toUpdateBook = (req, res) => {
         const id = req.params.id;
-        books.findByIdAndUpdate(id, {$set: req.body }, (err) => {
+        books.findByIdAndUpdate(id, { $set: req.body }, (err) => {
             if (!err) {
                 res.status(200).send({ message: 'Book updated successfully' })
 
@@ -76,9 +76,12 @@ class BookControler {
 
     static getBookByPublishingCompany = (req, res) => {
         const publishingCompany = req.query.publishingCompany;
-        books.find({ publishingCompany: publishingCompany }, {}, (err, books) => {
-
-            res.status(200).send(books)
+        books.find({ 'publishingCompany': publishingCompany }, {}, (err, books) => {
+            if (err) {
+                res.status(400).send({ message: `${err.message} = Id of the Publishing Company not found` })
+            } else {
+                res.status(200).send(books)
+            }
         })
     }
 }
