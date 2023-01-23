@@ -12,12 +12,25 @@ export default class User {
         this.#active = active;
     }
 
-    displayInfo() {
-        return (`Name: ${this.#name},  Email: ${this.#email}`);
+    #userObjMount() { //private method
+        return ({
+            name: this.#name,
+            email: this.#email,
+            birthday: this.#birthday,
+            role: this.#role,
+            active: this.#active
+        })
     }
 
-}
 
+    displayInfo() {
+        const objUser = this.#userObjMount();
+        return (`Name: ${objUser.name},  Email: ${objUser.email},  Birthday: ${objUser.birthday}, Role: ${objUser.role}, Active: ${objUser.active}
+        }`);
+    }
+
+
+}
 
 
 // const newUser = new User('John', 'j@j.com', '1990/01/01');

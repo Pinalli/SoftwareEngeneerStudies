@@ -5,9 +5,12 @@ export default class Adnin extends User {
         super(name, email, birthday, role, active);
     }
 
+    adminName() {
+        return `Admin name: ${this.name}`;
+    }
+
     createCourse(courseName, vacancies) {
         return ` Course by ${courseName} created with ${vacancies} vacancies `
-        console.log('Creating course...');
     }
 }
 
