@@ -6,9 +6,12 @@ import Admin from './Admin.js'
 // console.log(newUser.displayInfo())
 
 const newAdmin = new Admin('Rinaldi', 'r@email.com', '1908-04-23')
-console.log( newAdmin.name)
+console.log(newAdmin.name)
 newAdmin.name = 'Joseph'
-console.log( newAdmin.name)
+console.log(newAdmin.name)
+
+const newTeacher = new Teacher('Detref', 'd@email.com', '2000-08-12')
+console.log(newTeacher.displayInfo())
 // newUser.#name = 'Joseph''
 // console.log(newAdmin.displayInfo())
 // console.log(newAdmin.adminName())

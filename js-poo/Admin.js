@@ -5,8 +5,8 @@ export default class Adnin extends User {
         super(name, email, birthday, role, active);
     }
 
-    adminName() {
-        return `Admin name: ${this.name}`;
+    displayInfo() {
+        return ` Admin ${this.name} email ${this.email} birthday ${this.birthday} role ${this.role} active ${this.active} `
     }
 
     createCourse(courseName, vacancies) {
