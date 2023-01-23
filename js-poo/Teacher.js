@@ -11,7 +11,7 @@ export default class Teacher extends User {
     }
 }
 
-const newTeacher = new Teacher('Paul Mackenzi', 'paul@email.com', '1967/07/23');
-console.log(newTeacher);
-console.log(newTeacher.displayInfo());
-console.log(newTeacher.approvesStudent('John', 'JS'));
+// const newTeacher = new Teacher('Paul Mackenzi', 'paul@email.com', '1967/07/23');
+// console.log(newTeacher);
+// console.log(newTeacher.displayInfo());
+// console.log(newTeacher.approvesStudent('John', 'JS'));

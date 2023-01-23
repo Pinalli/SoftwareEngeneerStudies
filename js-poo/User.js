@@ -12,24 +12,68 @@ export default class User {
         this.#active = active;
     }
 
-    #userObjMount() { //private method
-        return ({
-            name: this.#name,
-            email: this.#email,
-            birthday: this.#birthday,
-            role: this.#role,
-            active: this.#active
-        })
+    get name() {
+        return this.#name;
     }
+
+    set name(newName) {
+        if(newName === ''){
+            throw new Error('Name cannot be empty');
+        }
+        else{
+        this.#name = newName;
+        console.log('Name changed successfully')
+        }
+    }
+
+    get email() {
+        return this.#email;
+    }
+    
+    set email(newEmail) {
+        this.#email = newEmail;
+    }
+
+    get birthday() {
+        return this.#birthday;
+    }
+
+    set birthday(newBirthday) {
+        this.#birthday = newBirthday;
+    }
+
+    get role() {
+        return this.#role;
+    }
+
+    set role(newRole) {
+        this.#role = newRole;
+    }    
+
+    get active() {
+        return this.#active;
+    }
+  
+    set active(newActive) {
+        this.#active = newActive;
+    }
+
+    // #userObjMount() { //private method
+    //     return ({
+    //         name: this.#name,
+    //         email: this.#email,
+    //         birthday: this.#birthday,
+    //         role: this.#role,
+    //         active: this.#active
+    //     })
+    // }
 
 
     displayInfo() {
-        const objUser = this.#userObjMount();
-        return (`Name: ${objUser.name},  Email: ${objUser.email},  Birthday: ${objUser.birthday}, Role: ${objUser.role}, Active: ${objUser.active}
+       // const this = this.#userObjMount();
+        return (`Name: ${this.name},  Email: ${this.email},  Birthday: ${this.birthday}, Role: ${this.role}, Active: ${this.active}
         }`);
     }
-
-
 }
 
 
