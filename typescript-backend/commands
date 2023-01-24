@@ -1,0 +1,15 @@
+yarn init -y
+
+yarn add express cors dotenv 
+
+yarn add -D @types/ express  @types/cors @types/dotenv
+
+yarn add -D typescript
+
+yarm tsc --init
+
+ yarn -D add ts-node-dev
+
+
+==========RUN==========
+yarn run dev
